@@ -13,6 +13,7 @@
 		18A62BBE1EA072DB00C36AEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A62BBC1EA072DB00C36AEB /* Main.storyboard */; };
 		18A62BC01EA072DB00C36AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A62BBF1EA072DB00C36AEB /* Assets.xcassets */; };
 		18A62BC31EA072DB00C36AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A62BC11EA072DB00C36AEB /* LaunchScreen.storyboard */; };
+		18A62BCD1EA0730D00C36AEB /* LPSwipeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A62BCC1EA0730D00C36AEB /* LPSwipeNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		18A62BBF1EA072DB00C36AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A62BC21EA072DB00C36AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A62BC41EA072DB00C36AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A62BCB1EA0730D00C36AEB /* LPSwipeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPSwipeNavigationController.h; sourceTree = "<group>"; };
+		18A62BCC1EA0730D00C36AEB /* LPSwipeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPSwipeNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		18A62BA71EA072DA00C36AEB = {
 			isa = PBXGroup;
 			children = (
+				18A62BCA1EA0730D00C36AEB /* LPSwipeNavigationController */,
 				18A62BB21EA072DA00C36AEB /* LPSwipeNavigationControllerDemo */,
 				18A62BB11EA072DA00C36AEB /* Products */,
 			);
@@ -77,6 +81,15 @@
 				18A62BB41EA072DA00C36AEB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A62BCA1EA0730D00C36AEB /* LPSwipeNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				18A62BCB1EA0730D00C36AEB /* LPSwipeNavigationController.h */,
+				18A62BCC1EA0730D00C36AEB /* LPSwipeNavigationController.m */,
+			);
+			path = LPSwipeNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A62BCD1EA0730D00C36AEB /* LPSwipeNavigationController.m in Sources */,
 				18A62BBB1EA072DA00C36AEB /* ViewController.m in Sources */,
 				18A62BB81EA072DA00C36AEB /* AppDelegate.m in Sources */,
 				18A62BB51EA072DA00C36AEB /* main.m in Sources */,

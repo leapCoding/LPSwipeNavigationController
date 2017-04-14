@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LPSwipeNavigationController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ViewController *v1 = [ViewController new];
+    v1.view.backgroundColor = [UIColor redColor];
+    ViewController *v2 = [ViewController new];
+    v2.view.backgroundColor = [UIColor blueColor];
+    ViewController *v3 = [ViewController new];
+    v3.view.backgroundColor = [UIColor blackColor];
+    ViewController *v4 = [ViewController new];
+    v4.view.backgroundColor = [UIColor lightTextColor];
+    LPSwipeNavigationController *nav = [[LPSwipeNavigationController alloc]initWithViewControllers:@[v1,v2,v3,v4] items:@[@"v1",@"v2",@"v3",@"v4"]];
+    //    nav.titleViewWidth = 120;
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
