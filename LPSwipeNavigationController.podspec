@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.author             = { "LeapDev" => "lpdevstore@163.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/leapCoding/LPSwipeNavigationController.git", :tag => "#{s.version}" }
-  s.source_files  = "LPSwipeNavigationController/**/*.{h,m}"
+  s.source_files  = 'LPSwipeNavigationController.h', 'LPSwipeNavigationController.m'
 end
